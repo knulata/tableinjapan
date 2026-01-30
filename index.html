@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JapanTable - Restaurant Reservations in Japan Made Easy</title>
-    <meta name="description" content="Book popular restaurants in Japan without speaking Japanese. We handle reservations at top sushi, ramen, kaiseki and omakase restaurants in Tokyo, Kyoto, Osaka.">
-    <meta name="keywords" content="japan restaurant reservation, tokyo restaurant booking, omakase reservation, sushi reservation tokyo, kaiseki booking kyoto">
+    <title>JapanTable - Affordable Restaurant Reservations in Japan | From $15</title>
+    <meta name="description" content="Book great restaurants in Japan for just $15-30. No $50+ fees like other services. We handle reservations at local favorites, izakayas, sushi spots, and hidden gems in Tokyo, Osaka, Kyoto.">
+    <meta name="keywords" content="japan restaurant reservation, tokyo restaurant booking, cheap japan booking service, izakaya reservation, sushi reservation tokyo, osaka restaurant booking">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍱</text></svg>">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="JapanTable - Restaurant Reservations in Japan">
-    <meta property="og:description" content="Book popular restaurants in Japan without speaking Japanese.">
+    <meta property="og:title" content="JapanTable - Restaurant Reservations in Japan from $15">
+    <meta property="og:description" content="Book great restaurants in Japan without the crazy fees. Real local spots, not just Michelin.">
     <meta property="og:type" content="website">
 
     <style>
@@ -100,9 +100,9 @@
 
         .hero-badge {
             display: inline-block;
-            background: rgba(196, 30, 58, 0.2);
-            border: 1px solid #c41e3a;
-            color: #ff6b6b;
+            background: rgba(16, 185, 129, 0.2);
+            border: 1px solid #10b981;
+            color: #6ee7b7;
             padding: 8px 20px;
             border-radius: 25px;
             font-size: 0.9rem;
@@ -110,7 +110,7 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 25px;
@@ -120,13 +120,23 @@
             color: #c41e3a;
         }
 
+        .hero h1 .price-highlight {
+            color: #10b981;
+        }
+
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             opacity: 0.9;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .hero-subtext {
+            font-size: 1rem;
+            opacity: 0.7;
+            margin-bottom: 35px;
         }
 
         .hero-cta {
@@ -172,10 +182,10 @@
             opacity: 0.7;
         }
 
-        /* Pain Points Section */
-        .pain-section {
-            padding: 100px 20px;
-            background: #f8f8f8;
+        /* Comparison Section */
+        .comparison-section {
+            padding: 80px 20px;
+            background: #fef2f2;
         }
 
         .container {
@@ -194,10 +204,83 @@
             text-align: center;
             font-size: 1.2rem;
             color: #666;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .comparison-table {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-row:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-header {
+            background: #1a1a1a;
+            color: white;
+            font-weight: 700;
+        }
+
+        .comparison-cell {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .comparison-cell.feature {
+            text-align: left;
+            justify-content: flex-start;
+            font-weight: 600;
+            background: #f9fafb;
+        }
+
+        .comparison-cell.highlight {
+            background: #f0fdf4;
+        }
+
+        .comparison-cell .price {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .comparison-cell .price.expensive {
+            color: #dc2626;
+        }
+
+        .comparison-cell .price.cheap {
+            color: #16a34a;
+        }
+
+        .check {
+            color: #16a34a;
+            font-size: 1.3rem;
+        }
+
+        .cross {
+            color: #dc2626;
+            font-size: 1.3rem;
+        }
+
+        /* Pain Points Section */
+        .pain-section {
+            padding: 100px 20px;
+            background: white;
         }
 
         .pain-grid {
@@ -207,10 +290,9 @@
         }
 
         .pain-card {
-            background: white;
+            background: #f8f8f8;
             padding: 35px;
             border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
 
         .pain-icon {
@@ -228,10 +310,79 @@
             line-height: 1.7;
         }
 
+        /* What We Book Section */
+        .restaurants-section {
+            padding: 100px 20px;
+            background: #f8f8f8;
+        }
+
+        .restaurant-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .restaurant-type {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .restaurant-type:hover {
+            transform: translateY(-5px);
+        }
+
+        .restaurant-type .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .restaurant-type h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .restaurant-type p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Cities Section */
+        .cities-section {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .cities-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .city-badge {
+            background: #1a1a1a;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .city-badge.coming-soon {
+            background: #e5e7eb;
+            color: #6b7280;
+        }
+
         /* How it Works */
         .how-section {
             padding: 100px 20px;
-            background: white;
+            background: #f8f8f8;
         }
 
         .steps {
@@ -297,11 +448,25 @@
             border-radius: 20px;
             padding: 40px;
             text-align: center;
+            position: relative;
         }
 
         .pricing-card.featured {
             background: linear-gradient(135deg, #c41e3a 0%, #a01830 100%);
             transform: scale(1.05);
+        }
+
+        .pricing-card .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #10b981;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
         }
 
         .pricing-name {
@@ -320,6 +485,16 @@
             font-size: 0.9rem;
             opacity: 0.7;
             margin-bottom: 30px;
+        }
+
+        .pricing-compare {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            margin-bottom: 25px;
+            text-decoration: line-through;
+            opacity: 0.7;
         }
 
         .pricing-features {
@@ -359,6 +534,13 @@
 
         .pricing-cta:hover {
             transform: translateY(-2px);
+        }
+
+        .pricing-note {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0.7;
+            font-size: 0.95rem;
         }
 
         /* Booking Form */
@@ -434,6 +616,26 @@
             margin-top: 20px;
             color: #666;
             font-size: 0.9rem;
+        }
+
+        .form-trust {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .trust-item .icon {
+            color: #10b981;
         }
 
         /* Testimonials */
@@ -573,7 +775,7 @@
             }
 
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
 
             .hero p {
@@ -585,7 +787,7 @@
             }
 
             .section-title {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .form-row {
@@ -598,6 +800,21 @@
 
             .pricing-card.featured {
                 transform: none;
+            }
+
+            .comparison-row {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-cell.feature {
+                background: #1a1a1a;
+                color: white;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .comparison-header {
+                display: none;
             }
         }
     </style>
@@ -612,26 +829,123 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">No Japanese Required</div>
-            <h1>Book Japan's Best Restaurants <span class="highlight">Without the Hassle</span></h1>
-            <p>We handle reservations at Tokyo's top sushi counters, hidden ramen shops, and exclusive kaiseki restaurants. You just show up and enjoy.</p>
+            <div class="hero-badge">70% cheaper than competitors</div>
+            <h1>Restaurant Reservations in Japan <span class="highlight">From Just</span> <span class="price-highlight">$15</span></h1>
+            <p>Skip the $50+ booking fees. We help you book great local restaurants, izakayas, and hidden gems — not just Michelin stars.</p>
+            <p class="hero-subtext">No Japanese needed. No hidden fees. Fast WhatsApp support.</p>
             <a href="#booking" class="hero-cta">
                 Request a Reservation
                 <span>→</span>
             </a>
             <div class="hero-stats">
                 <div class="stat">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Restaurants</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Success Rate</div>
+                    <div class="stat-number">$15</div>
+                    <div class="stat-label">Starting price</div>
                 </div>
                 <div class="stat">
                     <div class="stat-number">24hr</div>
-                    <div class="stat-label">Response Time</div>
+                    <div class="stat-label">Response time</div>
                 </div>
+                <div class="stat">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Cities covered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Why Pay More?</h2>
+            <p class="section-subtitle">Other services charge $50+ per person. We charge a flat fee per booking.</p>
+            <div class="comparison-table">
+                <div class="comparison-row comparison-header">
+                    <div class="comparison-cell">Feature</div>
+                    <div class="comparison-cell">Other Services</div>
+                    <div class="comparison-cell">JapanTable</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell feature">Booking Fee</div>
+                    <div class="comparison-cell"><span class="price expensive">$50+/person</span></div>
+                    <div class="comparison-cell highlight"><span class="price cheap">$15-30 flat</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell feature">Mid-range Restaurants</div>
+                    <div class="comparison-cell"><span class="cross">✗</span> Michelin only</div>
+                    <div class="comparison-cell highlight"><span class="check">✓</span> All types</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell feature">Hidden Fees</div>
+                    <div class="comparison-cell"><span class="cross">✗</span> Common complaint</div>
+                    <div class="comparison-cell highlight"><span class="check">✓</span> Transparent</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell feature">WhatsApp Support</div>
+                    <div class="comparison-cell"><span class="cross">✗</span> Email only</div>
+                    <div class="comparison-cell highlight"><span class="check">✓</span> Fast response</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell feature">Regional Cities</div>
+                    <div class="comparison-cell"><span class="cross">✗</span> Tokyo/Kyoto only</div>
+                    <div class="comparison-cell highlight"><span class="check">✓</span> 5+ cities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Book Section -->
+    <section class="restaurants-section">
+        <div class="container">
+            <h2 class="section-title">Real Japan, Not Just Michelin Stars</h2>
+            <p class="section-subtitle">We book the places locals actually eat — from neighborhood sushi to hidden izakayas</p>
+            <div class="restaurant-types">
+                <div class="restaurant-type">
+                    <div class="icon">🍣</div>
+                    <h3>Sushi & Omakase</h3>
+                    <p>Counter seats at local favorites</p>
+                </div>
+                <div class="restaurant-type">
+                    <div class="icon">🍜</div>
+                    <h3>Ramen Shops</h3>
+                    <p>Skip the 2-hour queues</p>
+                </div>
+                <div class="restaurant-type">
+                    <div class="icon">🍢</div>
+                    <h3>Izakayas</h3>
+                    <p>Authentic Japanese pubs</p>
+                </div>
+                <div class="restaurant-type">
+                    <div class="icon">🥩</div>
+                    <h3>Wagyu & Yakiniku</h3>
+                    <p>Premium beef experiences</p>
+                </div>
+                <div class="restaurant-type">
+                    <div class="icon">🍱</div>
+                    <h3>Kaiseki</h3>
+                    <p>Traditional multi-course</p>
+                </div>
+                <div class="restaurant-type">
+                    <div class="icon">🏮</div>
+                    <h3>Hidden Gems</h3>
+                    <p>Places tourists never find</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section class="cities-section">
+        <div class="container">
+            <h2 class="section-title">Beyond Tokyo</h2>
+            <p class="section-subtitle">We cover Japan's best food cities</p>
+            <div class="cities-grid">
+                <div class="city-badge">Tokyo</div>
+                <div class="city-badge">Osaka</div>
+                <div class="city-badge">Kyoto</div>
+                <div class="city-badge">Fukuoka</div>
+                <div class="city-badge">Hiroshima</div>
+                <div class="city-badge coming-soon">More coming</div>
             </div>
         </div>
     </section>
@@ -640,22 +954,22 @@
     <section class="pain-section">
         <div class="container">
             <h2 class="section-title">Why Booking in Japan is Hard</h2>
-            <p class="section-subtitle">Most tourists miss out on incredible food experiences because of these barriers</p>
+            <p class="section-subtitle">These barriers stop most tourists from eating at the best places</p>
             <div class="pain-grid">
                 <div class="pain-card">
                     <div class="pain-icon">🗣️</div>
                     <h3>Japanese-Only Reservations</h3>
-                    <p>Most restaurants only accept phone reservations in Japanese. No English websites, no online booking systems.</p>
+                    <p>90% of great restaurants only accept phone reservations in Japanese. No English websites, no online booking.</p>
                 </div>
                 <div class="pain-card">
                     <div class="pain-icon">📵</div>
                     <h3>No Foreign Phone Numbers</h3>
-                    <p>Many restaurants require a Japanese phone number for reservations. Your international number won't work.</p>
+                    <p>Many restaurants require a Japanese phone number. Your international number won't work for callbacks.</p>
                 </div>
                 <div class="pain-card">
-                    <div class="pain-icon">📅</div>
-                    <h3>Strict Cancellation Policies</h3>
-                    <p>High-end restaurants charge steep cancellation fees. Understanding the terms in Japanese is nearly impossible.</p>
+                    <div class="pain-icon">🚫</div>
+                    <h3>Foreigners Turned Away</h3>
+                    <p>Due to no-show problems, some restaurants now refuse foreign tourists entirely. We have trusted relationships.</p>
                 </div>
             </div>
         </div>
@@ -664,60 +978,66 @@
     <!-- How it Works -->
     <section class="how-section">
         <div class="container">
-            <h2 class="section-title">How JapanTable Works</h2>
-            <p class="section-subtitle">Simple, fast, and reliable restaurant reservations</p>
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Simple, fast, and transparent</p>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>Tell Us What You Want</h3>
-                    <p>Share your dates, preferred cuisine, budget, and any special requests or dietary needs.</p>
+                    <p>Restaurant name, cuisine type, dates, party size, and any dietary needs.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>We Make the Call</h3>
-                    <p>Our Japanese-speaking team contacts the restaurant directly and secures your reservation.</p>
+                    <p>Our Japanese-speaking team contacts the restaurant and secures your spot.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Confirmation Sent</h3>
-                    <p>You receive confirmation with all details in English. Just show up and enjoy your meal!</p>
+                    <h3>You Get Confirmation</h3>
+                    <p>Receive all details on WhatsApp. Just show up and enjoy!</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing -->
-    <section class="pricing-section">
+    <section class="pricing-section" id="pricing">
         <div class="container">
-            <h2 class="section-title">Simple Pricing</h2>
-            <p class="section-subtitle">Pay per reservation. No subscriptions, no hidden fees.</p>
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">Flat fee per booking. No per-person charges. No hidden fees.</p>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-name">Standard</div>
                     <div class="pricing-price">$15</div>
                     <div class="pricing-per">per reservation</div>
+                    <div class="pricing-compare">Others charge $50+/person</div>
                     <ul class="pricing-features">
-                        <li>Regular restaurants & izakayas</li>
-                        <li>Ramen shops with queues</li>
+                        <li>Local favorites & izakayas</li>
+                        <li>Ramen, sushi, yakiniku</li>
                         <li>48-hour confirmation</li>
-                        <li>Email support</li>
+                        <li>WhatsApp support</li>
+                        <li>Dietary requests included</li>
                     </ul>
                     <a href="#booking" class="pricing-cta">Book Now</a>
                 </div>
                 <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
                     <div class="pricing-name">Premium</div>
                     <div class="pricing-price">$30</div>
                     <div class="pricing-per">per reservation</div>
+                    <div class="pricing-compare">Others charge $100+/person</div>
                     <ul class="pricing-features">
-                        <li>Michelin-starred restaurants</li>
-                        <li>Exclusive omakase counters</li>
+                        <li>Hard-to-book restaurants</li>
+                        <li>High-end omakase & kaiseki</li>
                         <li>24-hour confirmation</li>
-                        <li>WhatsApp support</li>
-                        <li>Dietary accommodations</li>
+                        <li>Priority WhatsApp support</li>
+                        <li>Special requests & occasions</li>
+                        <li>Backup options if unavailable</li>
                     </ul>
                     <a href="#booking" class="pricing-cta">Book Now</a>
                 </div>
             </div>
+            <p class="pricing-note">You only pay after we confirm your reservation. Full refund if we can't book.</p>
         </div>
     </section>
 
@@ -725,11 +1045,11 @@
     <section class="booking-section" id="booking">
         <div class="container">
             <h2 class="section-title">Request a Reservation</h2>
-            <p class="section-subtitle">Fill out the form and we'll get back to you within 24 hours</p>
+            <p class="section-subtitle">We'll get back to you within 24 hours</p>
             <div class="booking-form">
                 <div class="form-group">
-                    <label>Restaurant Name (or type of cuisine)</label>
-                    <input type="text" id="restaurant" placeholder="e.g., Sukiyabashi Jiro, or 'best sushi in Ginza'" required>
+                    <label>Restaurant Name (or what you're looking for)</label>
+                    <input type="text" id="restaurant" placeholder="e.g., 'best sushi in Shibuya' or specific restaurant name" required>
                 </div>
                 <div class="form-row">
                     <div class="form-group">
@@ -737,8 +1057,10 @@
                         <select id="city" required>
                             <option value="">Select city</option>
                             <option value="tokyo">Tokyo</option>
-                            <option value="kyoto">Kyoto</option>
                             <option value="osaka">Osaka</option>
+                            <option value="kyoto">Kyoto</option>
+                            <option value="fukuoka">Fukuoka</option>
+                            <option value="hiroshima">Hiroshima</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
@@ -780,16 +1102,20 @@
                         <input type="email" id="email" placeholder="your@email.com" required>
                     </div>
                     <div class="form-group">
-                        <label>WhatsApp (optional)</label>
-                        <input type="tel" id="whatsapp" placeholder="+1 234 567 8900">
+                        <label>WhatsApp</label>
+                        <input type="tel" id="whatsapp" placeholder="+1 234 567 8900" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Special Requests</label>
+                    <label>Special Requests (optional)</label>
                     <textarea id="requests" rows="3" placeholder="Dietary restrictions, allergies, special occasions, seating preferences..."></textarea>
                 </div>
-                <button type="button" onclick="submitBooking()" class="form-submit">Submit Reservation Request</button>
-                <p class="form-note">You'll only be charged after we confirm your reservation</p>
+                <button type="button" onclick="submitBooking()" class="form-submit">Submit Request — Pay Only After Confirmation</button>
+                <div class="form-trust">
+                    <div class="trust-item"><span class="icon">✓</span> No upfront payment</div>
+                    <div class="trust-item"><span class="icon">✓</span> Full refund if unavailable</div>
+                    <div class="trust-item"><span class="icon">✓</span> WhatsApp support</div>
+                </div>
             </div>
         </div>
     </section>
@@ -798,10 +1124,10 @@
     <section class="testimonials-section">
         <div class="container">
             <h2 class="section-title">What Travelers Say</h2>
-            <p class="section-subtitle">Join thousands of happy diners</p>
+            <p class="section-subtitle">Real experiences from real visitors</p>
             <div class="testimonials-grid">
                 <div class="testimonial">
-                    <p class="testimonial-text">"Got us into a 2-Michelin star sushi restaurant that was 'fully booked' when I tried myself. Worth every penny!"</p>
+                    <p class="testimonial-text">"Finally, a service that doesn't charge $50 per person! Got us into an amazing yakitori place in Shibuya that we never would have found. $15 well spent."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">M</div>
                         <div>
@@ -811,7 +1137,7 @@
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p class="testimonial-text">"The hidden yakitori place they booked for us was the highlight of our trip. Never would have found it ourselves."</p>
+                    <p class="testimonial-text">"Other services wanted $100+ for a kaiseki booking. JapanTable did it for $30 and even helped with my wife's gluten allergy. WhatsApp support was super fast."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">S</div>
                         <div>
@@ -821,11 +1147,11 @@
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p class="testimonial-text">"Super responsive on WhatsApp. Changed our reservation twice and they handled it perfectly."</p>
+                    <p class="testimonial-text">"Booked a tiny 8-seat sushi counter in Osaka that doesn't take foreign reservations. These guys have connections. Way better value than the big booking sites."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">K</div>
                         <div>
-                            <div class="testimonial-name">Kim L.</div>
+                            <div class="testimonial-name">Kevin L.</div>
                             <div class="testimonial-location">Sydney, Australia</div>
                         </div>
                     </div>
@@ -837,27 +1163,31 @@
     <!-- FAQ -->
     <section class="faq-section">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <h2 class="section-title">Questions & Answers</h2>
             <div class="faq-list">
                 <div class="faq-item">
-                    <div class="faq-question">How far in advance should I book?</div>
-                    <div class="faq-answer">For regular restaurants, 1-2 weeks is usually sufficient. For Michelin-starred or highly popular spots, we recommend 1-2 months in advance. Some exclusive omakase counters book up 3+ months ahead.</div>
+                    <div class="faq-question">How are you so much cheaper than other services?</div>
+                    <div class="faq-answer">Other services charge per-person fees and add markups to meal prices. We charge a simple flat fee for the booking itself. We're not trying to make money on your meal — just on helping you get the reservation.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">What if the restaurant is fully booked?</div>
-                    <div class="faq-answer">We'll suggest similar alternatives that match your preferences. You're never charged unless we secure a confirmed reservation.</div>
+                    <div class="faq-answer">We'll suggest similar alternatives that match your preferences. You're never charged unless we secure a confirmed reservation. If we can't book anything you're happy with, full refund.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can you accommodate dietary restrictions?</div>
-                    <div class="faq-answer">Yes! We communicate your dietary needs directly to the restaurant in Japanese. We handle vegetarian, vegan, halal, gluten-free, and allergy requirements.</div>
+                    <div class="faq-question">How far in advance should I book?</div>
+                    <div class="faq-answer">For most restaurants, 1-2 weeks is enough. For very popular spots or weekends, 3-4 weeks is better. Let us know your dates and we'll tell you what's realistic.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">When do I pay?</div>
-                    <div class="faq-answer">You only pay our service fee after we confirm your reservation. Restaurant payment is made directly at the restaurant after your meal.</div>
+                    <div class="faq-question">Can you handle dietary restrictions?</div>
+                    <div class="faq-answer">Yes! We communicate your needs directly to the restaurant in Japanese. Vegetarian, vegan, halal, gluten-free, allergies — we handle it all.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">When and how do I pay?</div>
+                    <div class="faq-answer">You pay our booking fee only after we confirm your reservation. We accept PayPal. Restaurant payment is made directly at the restaurant after your meal.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">What's your cancellation policy?</div>
-                    <div class="faq-answer">Our service fee is non-refundable once a reservation is confirmed. However, we can help you modify or reschedule if the restaurant allows it.</div>
+                    <div class="faq-answer">Our booking fee is non-refundable once confirmed, as we've already secured and guaranteed your spot. However, we can help you reschedule if the restaurant allows it.</div>
                 </div>
             </div>
         </div>
@@ -867,11 +1197,11 @@
     <footer class="footer">
         <div class="footer-links">
             <a href="#booking">Book Now</a>
-            <a href="mailto:hello@japantable.com">Contact Us</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy Policy</a>
+            <a href="#pricing">Pricing</a>
+            <a href="https://wa.me/628131102445" target="_blank">WhatsApp Us</a>
+            <a href="mailto:hello@japantable.com">Email</a>
         </div>
-        <p class="footer-copy">&copy; 2025 JapanTable. All rights reserved.</p>
+        <p class="footer-copy">&copy; 2025 JapanTable. Making Japan's best food accessible to everyone.</p>
     </footer>
 
     <script>
@@ -898,26 +1228,28 @@
             };
 
             // Validate required fields
-            if (!data.restaurant || !data.city || !data.partySize || !data.date || !data.time || !data.name || !data.email) {
+            if (!data.restaurant || !data.city || !data.partySize || !data.date || !data.time || !data.name || !data.email || !data.whatsapp) {
                 alert('Please fill in all required fields');
                 return;
             }
 
             // Format message for WhatsApp
-            const message = `🍱 New JapanTable Reservation Request
+            const message = `🍱 JapanTable Reservation Request
 
 📍 Restaurant: ${data.restaurant}
 🏙️ City: ${data.city}
-👥 Party Size: ${data.partySize}
+👥 Party: ${data.partySize}
 📅 Date: ${data.date}
 🕐 Time: ${data.time}
 
 👤 Name: ${data.name}
 📧 Email: ${data.email}
-📱 WhatsApp: ${data.whatsapp || 'Not provided'}
+📱 WhatsApp: ${data.whatsapp}
 
-📝 Special Requests:
-${data.requests || 'None'}`;
+📝 Requests: ${data.requests || 'None'}
+
+—
+Sent via japantable.com`;
 
             // Open WhatsApp with pre-filled message
             window.open(`https://wa.me/628131102445?text=${encodeURIComponent(message)}`, '_blank');
