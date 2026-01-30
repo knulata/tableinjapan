@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JapanTable - Affordable Restaurant Reservations in Japan | From $15</title>
+    <title>Table in Japan - Affordable Restaurant Reservations in Japan | From $15</title>
     <meta name="description" content="Book great restaurants in Japan for just $15-30. No $50+ fees like other services. We handle reservations at local favorites, izakayas, sushi spots, and hidden gems in Tokyo, Osaka, Kyoto.">
     <meta name="keywords" content="japan restaurant reservation, tokyo restaurant booking, cheap japan booking service, izakaya reservation, sushi reservation tokyo, osaka restaurant booking">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍱</text></svg>">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="JapanTable - Restaurant Reservations in Japan from $15">
+    <meta property="og:title" content="Table in Japan - Restaurant Reservations in Japan from $15">
     <meta property="og:description" content="Book great restaurants in Japan without the crazy fees. Real local spots, not just Michelin.">
     <meta property="og:type" content="website">
 
@@ -318,9 +318,12 @@
 
         .restaurant-types {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 25px;
             margin-top: 50px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .restaurant-type {
@@ -437,10 +440,11 @@
 
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
             max-width: 900px;
             margin: 0 auto;
+            align-items: stretch;
         }
 
         .pricing-card {
@@ -449,11 +453,12 @@
             padding: 40px;
             text-align: center;
             position: relative;
+            display: flex;
+            flex-direction: column;
         }
 
         .pricing-card.featured {
             background: linear-gradient(135deg, #c41e3a 0%, #a01830 100%);
-            transform: scale(1.05);
         }
 
         .pricing-card .popular-badge {
@@ -501,6 +506,7 @@
             list-style: none;
             margin-bottom: 30px;
             text-align: left;
+            flex-grow: 1;
         }
 
         .pricing-features li {
@@ -525,6 +531,7 @@
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s;
+            margin-top: auto;
         }
 
         .pricing-card.featured .pricing-cta {
@@ -798,9 +805,6 @@
                 padding: 30px 25px;
             }
 
-            .pricing-card.featured {
-                transform: none;
-            }
 
             .comparison-row {
                 grid-template-columns: 1fr;
@@ -816,13 +820,23 @@
             .comparison-header {
                 display: none;
             }
+
+            .restaurant-types {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .restaurant-types {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav">
-        <a href="#" class="logo">Japan<span>Table</span></a>
+        <a href="#" class="logo">Table<span>inJapan</span></a>
         <a href="#booking" class="nav-cta">Book Now</a>
     </nav>
 
@@ -863,7 +877,7 @@
                 <div class="comparison-row comparison-header">
                     <div class="comparison-cell">Feature</div>
                     <div class="comparison-cell">Other Services</div>
-                    <div class="comparison-cell">JapanTable</div>
+                    <div class="comparison-cell">Table in Japan</div>
                 </div>
                 <div class="comparison-row">
                     <div class="comparison-cell feature">Booking Fee</div>
@@ -1137,7 +1151,7 @@
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p class="testimonial-text">"Other services wanted $100+ for a kaiseki booking. JapanTable did it for $30 and even helped with my wife's gluten allergy. WhatsApp support was super fast."</p>
+                    <p class="testimonial-text">"Other services wanted $100+ for a kaiseki booking. Table in Japan did it for $30 and even helped with my wife's gluten allergy. WhatsApp support was super fast."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">S</div>
                         <div>
@@ -1201,7 +1215,7 @@
             <a href="https://wa.me/628131102445" target="_blank">WhatsApp Us</a>
             <a href="mailto:hello@japantable.com">Email</a>
         </div>
-        <p class="footer-copy">&copy; 2025 JapanTable. Making Japan's best food accessible to everyone.</p>
+        <p class="footer-copy">&copy; 2025 Table in Japan. Making Japan's best food accessible to everyone.</p>
     </footer>
 
     <script>
@@ -1249,7 +1263,7 @@
 📝 Requests: ${data.requests || 'None'}
 
 —
-Sent via japantable.com`;
+Sent via tableinjapan.com`;
 
             // Open WhatsApp with pre-filled message
             window.open(`https://wa.me/628131102445?text=${encodeURIComponent(message)}`, '_blank');
